@@ -78,9 +78,9 @@ function eduglu_words_strongarm() {
     'author' => '0',
     'options' => '1',
     'comment_settings' => '2',
-    'menu' => '-4',
-    'book' => '-2',
-    'og_nodeapi' => '-3',
+    'menu' => '-3',
+    'book' => '-4',
+    'og_nodeapi' => '-2',
     'vud_node_widget_display' => '-10',
   );
 
@@ -103,5 +103,42 @@ function eduglu_words_strongarm() {
   $strongarm->value = 'group_post_standard';
 
   $export['og_content_type_usage_word'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'vud_node_types';
+  $strongarm->value = array(
+    'word' => 'word',
+    'book' => 0,
+    'story' => 0,
+    'page' => 0,
+    'poll' => 0,
+    'shoutbox' => 0,
+    'uprofile' => 0,
+    'group' => 0,
+  );
+
+  $export['vud_node_types'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'vud_node_widget';
+  $strongarm->value = 'updown';
+
+  $export['vud_node_widget'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'vud_node_widget_show';
+  $strongarm->value = '3';
+
+  $export['vud_node_widget_show'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'vud_node_widget_vote_on_teaser';
+  $strongarm->value = 1;
+
+  $export['vud_node_widget_vote_on_teaser'] = $strongarm;
   return $export;
 }
