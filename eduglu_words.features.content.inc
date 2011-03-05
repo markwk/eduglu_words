@@ -11,7 +11,7 @@ function eduglu_words_content_default_fields() {
     'field_name' => 'field_translation',
     'type_name' => 'word',
     'display_settings' => array(
-      'weight' => '-1',
+      'weight' => '-6',
       'parent' => '',
       'label' => array(
         'format' => 'inline',
@@ -48,7 +48,7 @@ function eduglu_words_content_default_fields() {
     'widget_active' => '1',
     'type' => 'text',
     'required' => '0',
-    'multiple' => '1',
+    'multiple' => '0',
     'module' => 'text',
     'active' => '1',
     'text_processing' => '0',
@@ -78,7 +78,7 @@ function eduglu_words_content_default_fields() {
     'field_name' => 'field_word_def',
     'type_name' => 'word',
     'display_settings' => array(
-      'weight' => '-2',
+      'weight' => '-7',
       'parent' => '',
       'label' => array(
         'format' => 'above',
@@ -145,7 +145,7 @@ function eduglu_words_content_default_fields() {
     'field_name' => 'field_word_image',
     'type_name' => 'word',
     'display_settings' => array(
-      'weight' => '-4',
+      'weight' => '-5',
       'parent' => '',
       'label' => array(
         'format' => 'hidden',
@@ -213,7 +213,7 @@ function eduglu_words_content_default_fields() {
         'timestamp' => 1299348878,
         'fid' => '206',
       ),
-      'use_default_image' => 0,
+      'use_default_image' => 1,
       'filefield_sources' => array(
         'remote' => 0,
         'reference' => 0,
@@ -254,7 +254,7 @@ function eduglu_words_content_default_fields() {
     'field_name' => 'field_word_type',
     'type_name' => 'word',
     'display_settings' => array(
-      'weight' => '-3',
+      'weight' => '-8',
       'parent' => '',
       'label' => array(
         'format' => 'inline',
