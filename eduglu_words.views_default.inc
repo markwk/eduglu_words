@@ -176,7 +176,7 @@ function eduglu_words_views_default_views() {
       'relationship' => 'none',
     ),
     'picture' => array(
-      'label' => 'Picture',
+      'label' => 'Author',
       'alter' => array(
         'alter_text' => 0,
         'text' => '',
