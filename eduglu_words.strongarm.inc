@@ -16,7 +16,7 @@ function eduglu_words_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_controls_word';
-  $strongarm->value = '1';
+  $strongarm->value = '3';
 
   $export['comment_controls_word'] = $strongarm;
   $strongarm = new stdClass;
@@ -51,7 +51,7 @@ function eduglu_words_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_preview_word';
-  $strongarm->value = '1';
+  $strongarm->value = '0';
 
   $export['comment_preview_word'] = $strongarm;
   $strongarm = new stdClass;
@@ -65,7 +65,7 @@ function eduglu_words_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_word';
-  $strongarm->value = '0';
+  $strongarm->value = '2';
 
   $export['comment_word'] = $strongarm;
   $strongarm = new stdClass;
@@ -73,14 +73,15 @@ function eduglu_words_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'content_extra_weights_word';
   $strongarm->value = array(
-    'title' => '-5',
-    'revision_information' => '3',
-    'author' => '4',
-    'options' => '5',
-    'comment_settings' => '6',
-    'menu' => '0',
-    'book' => '2',
-    'og_nodeapi' => '1',
+    'title' => '-9',
+    'revision_information' => '-1',
+    'author' => '0',
+    'options' => '1',
+    'comment_settings' => '2',
+    'menu' => '-4',
+    'book' => '-2',
+    'og_nodeapi' => '-3',
+    'vud_node_widget_display' => '-10',
   );
 
   $export['content_extra_weights_word'] = $strongarm;
@@ -99,7 +100,7 @@ function eduglu_words_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'og_content_type_usage_word';
-  $strongarm->value = 'group_post_wiki';
+  $strongarm->value = 'group_post_standard';
 
   $export['og_content_type_usage_word'] = $strongarm;
   return $export;
