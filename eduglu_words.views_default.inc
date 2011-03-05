@@ -43,7 +43,7 @@ function eduglu_words_views_default_views() {
       'empty_zero' => 0,
       'link_to_node' => 0,
       'label_type' => 'widget',
-      'format' => '160x120_linked',
+      'format' => '30x30_crop_linked',
       'multiple' => array(
         'group' => TRUE,
         'multiple_number' => '',
@@ -60,7 +60,7 @@ function eduglu_words_views_default_views() {
       ),
     ),
     'title' => array(
-      'label' => 'Title',
+      'label' => 'Word',
       'alter' => array(
         'alter_text' => 0,
         'text' => '',
@@ -72,8 +72,8 @@ function eduglu_words_views_default_views() {
         'suffix' => '',
         'target' => '',
         'help' => '',
-        'trim' => 0,
-        'max_length' => '',
+        'trim' => 1,
+        'max_length' => '30',
         'word_boundary' => 1,
         'ellipsis' => 1,
         'html' => 0,
@@ -92,6 +92,9 @@ function eduglu_words_views_default_views() {
       'table' => 'node',
       'field' => 'title',
       'relationship' => 'none',
+      'override' => array(
+        'button' => 'Override',
+      ),
     ),
     'field_translation_value' => array(
       'label' => 'Translation',
@@ -278,7 +281,9 @@ function eduglu_words_views_default_views() {
     ),
   ));
   $handler->override_option('access', array(
-    'type' => 'none',
+    'type' => 'spaces_feature',
+    'spaces_feature' => 'eduglu_words',
+    'perm' => 'access content',
   ));
   $handler->override_option('cache', array(
     'type' => 'none',

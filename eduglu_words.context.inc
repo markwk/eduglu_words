@@ -35,14 +35,21 @@ function eduglu_words_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'boxes-words_help' => array(
+          'module' => 'boxes',
+          'delta' => 'words_help',
+          'region' => 'right',
+          'weight' => 0,
+        ),
         'views-Words-block_1' => array(
           'module' => 'views',
           'delta' => 'Words-block_1',
           'region' => 'right',
-          'weight' => 0,
+          'weight' => 1,
         ),
       ),
     ),
+    'menu' => 'words',
   );
   $context->condition_mode = 0;
 
