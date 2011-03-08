@@ -464,11 +464,23 @@ function eduglu_words_views_default_views() {
       ),
     ),
   ));
-  $handler->override_option('style_plugin', 'list');
-  $handler->override_option('style_options', array(
-    'grouping' => '',
-    'type' => 'ul',
+  $handler->override_option('sorts', array(
+    'title' => array(
+      'order' => 'ASC',
+      'id' => 'title',
+      'table' => 'node',
+      'field' => 'title',
+      'override' => array(
+        'button' => 'Use default',
+      ),
+      'relationship' => 'none',
+    ),
   ));
+  $handler->override_option('title', 'All Group Words');
+  $handler->override_option('items_per_page', 0);
+  $handler->override_option('use_pager', '0');
+  $handler->override_option('style_plugin', 'default');
+  $handler->override_option('style_options', array());
   $handler->override_option('block_description', '');
   $handler->override_option('block_caching', -1);
 

@@ -74,13 +74,14 @@ function eduglu_words_strongarm() {
   $strongarm->name = 'content_extra_weights_word';
   $strongarm->value = array(
     'title' => '-9',
-    'revision_information' => '-1',
-    'author' => '0',
-    'options' => '1',
-    'comment_settings' => '2',
-    'menu' => '-3',
-    'book' => '-4',
-    'og_nodeapi' => '-2',
+    'revision_information' => '1',
+    'author' => '2',
+    'options' => '3',
+    'comment_settings' => '4',
+    'menu' => '-1',
+    'book' => '-2',
+    'path' => '5',
+    'og_nodeapi' => '0',
     'vud_node_widget_display' => '-10',
   );
 
