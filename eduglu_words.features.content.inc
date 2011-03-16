@@ -6,138 +6,6 @@
 function eduglu_words_content_default_fields() {
   $fields = array();
 
-  // Exported field: field_antonyms
-  $fields['word-field_antonyms'] = array(
-    'field_name' => 'field_antonyms',
-    'type_name' => 'word',
-    'display_settings' => array(
-      'label' => array(
-        'format' => 'above',
-        'exclude' => 0,
-      ),
-      '5' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      'teaser' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      'full' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '4' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '2' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '3' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      'token' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-    ),
-    'widget_active' => '1',
-    'type' => 'text',
-    'required' => '0',
-    'multiple' => '0',
-    'module' => 'text',
-    'active' => '1',
-    'text_processing' => '0',
-    'max_length' => '',
-    'allowed_values' => '',
-    'allowed_values_php' => '',
-    'widget' => array(
-      'rows' => 5,
-      'size' => '60',
-      'default_value' => array(
-        '0' => array(
-          'value' => '',
-          '_error_element' => 'default_value_widget][field_antonyms][0][value',
-        ),
-      ),
-      'default_value_php' => NULL,
-      'label' => 'Antonyms',
-      'weight' => '-4',
-      'description' => '',
-      'type' => 'text_textfield',
-      'module' => 'text',
-    ),
-  );
-
-  // Exported field: field_synonyms
-  $fields['word-field_synonyms'] = array(
-    'field_name' => 'field_synonyms',
-    'type_name' => 'word',
-    'display_settings' => array(
-      'label' => array(
-        'format' => 'above',
-        'exclude' => 0,
-      ),
-      '5' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      'teaser' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      'full' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '4' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '2' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '3' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      'token' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-    ),
-    'widget_active' => '1',
-    'type' => 'text',
-    'required' => '0',
-    'multiple' => '0',
-    'module' => 'text',
-    'active' => '1',
-    'text_processing' => '0',
-    'max_length' => '',
-    'allowed_values' => '',
-    'allowed_values_php' => '',
-    'widget' => array(
-      'rows' => 5,
-      'size' => '60',
-      'default_value' => array(
-        '0' => array(
-          'value' => '',
-          '_error_element' => 'default_value_widget][field_synonyms][0][value',
-        ),
-      ),
-      'default_value_php' => NULL,
-      'label' => 'Synonyms',
-      'weight' => '-5',
-      'description' => '',
-      'type' => 'text_textfield',
-      'module' => 'text',
-    ),
-  );
-
   // Exported field: field_translation
   $fields['word-field_translation'] = array(
     'field_name' => 'field_translation',
@@ -335,15 +203,15 @@ function eduglu_words_content_default_fields() {
       'title_type' => 'textfield',
       'default_image' => array(
         'filename' => 'word_image_icon.png',
-        'filepath' => 'sites/language-corner.org/files/imagefield_default_images/word_image_icon.png',
+        'filepath' => 'sites/default/files/imagefield_default_images/word_image_icon.png',
         'filemime' => 'image/png',
         'source' => 'default_image_upload',
-        'destination' => 'sites/language-corner.org/files/imagefield_default_images/word_image_icon.png',
+        'destination' => 'sites/default/files/imagefield_default_images/word_image_icon.png',
         'filesize' => 7916,
         'uid' => '1',
         'status' => 1,
-        'timestamp' => 1299362038,
-        'fid' => '232',
+        'timestamp' => 1299348878,
+        'fid' => '206',
       ),
       'use_default_image' => 1,
       'filefield_sources' => array(
@@ -364,8 +232,6 @@ function eduglu_words_content_default_fields() {
         'imagecache_25x25_crop' => 0,
         'imagecache_30x30_crop' => 0,
         'imagecache_160x120' => 0,
-        'imagecache_eduglu_imageboard-thumb' => 0,
-        'imagecache_eduglu_imageboard_image' => 0,
         'imagecache_Large' => 0,
         'imagecache_Medium' => 0,
         'imagecache_Small' => 0,
@@ -376,7 +242,7 @@ function eduglu_words_content_default_fields() {
       'insert_class' => '',
       'insert_width' => '',
       'label' => 'Image',
-      'weight' => '-3',
+      'weight' => '-5',
       'description' => 'Upload an image in order to remember the word. ',
       'type' => 'imagefield_widget',
       'module' => 'imagefield',
@@ -451,10 +317,8 @@ adj | adjective',
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Antonyms');
   t('Definition');
   t('Image');
-  t('Synonyms');
   t('Translation');
   t('Word Type');
 
