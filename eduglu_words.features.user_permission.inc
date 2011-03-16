@@ -140,7 +140,8 @@ function eduglu_words_user_default_permissions() {
   $permissions['view field_translation'] = array(
     'name' => 'view field_translation',
     'roles' => array(
-      '0' => 'authenticated user',
+      '0' => 'anonymous user',
+      '1' => 'authenticated user',
     ),
   );
 
@@ -148,7 +149,8 @@ function eduglu_words_user_default_permissions() {
   $permissions['view field_word_def'] = array(
     'name' => 'view field_word_def',
     'roles' => array(
-      '0' => 'authenticated user',
+      '0' => 'anonymous user',
+      '1' => 'authenticated user',
     ),
   );
 
@@ -156,7 +158,8 @@ function eduglu_words_user_default_permissions() {
   $permissions['view field_word_image'] = array(
     'name' => 'view field_word_image',
     'roles' => array(
-      '0' => 'authenticated user',
+      '0' => 'anonymous user',
+      '1' => 'authenticated user',
     ),
   );
 
@@ -164,7 +167,8 @@ function eduglu_words_user_default_permissions() {
   $permissions['view field_word_type'] = array(
     'name' => 'view field_word_type',
     'roles' => array(
-      '0' => 'authenticated user',
+      '0' => 'anonymous user',
+      '1' => 'authenticated user',
     ),
   );
 
