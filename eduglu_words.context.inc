@@ -47,6 +47,12 @@ function eduglu_words_context_default_contexts() {
           'region' => 'right',
           'weight' => 1,
         ),
+        'views-recent_word_comments-block' => array(
+          'module' => 'views',
+          'delta' => 'recent_word_comments-block',
+          'region' => 'right',
+          'weight' => 2,
+        ),
       ),
     ),
     'menu' => 'words',

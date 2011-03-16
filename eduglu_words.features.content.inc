@@ -219,10 +219,10 @@ function eduglu_words_content_default_fields() {
         'reference' => 0,
         'attach' => 0,
       ),
-      'filefield_source_autocomplete' => '0',
       'filefield_source_attach_path' => 'file_attach',
       'filefield_source_attach_absolute' => '0',
       'filefield_source_attach_mode' => 'move',
+      'filefield_source_autocomplete' => '0',
       'insert' => 0,
       'insert_styles' => array(
         'auto' => 0,
